@@ -2,12 +2,13 @@
   "name": "express-typescript-starter",
   "version": "1.0.0",
   "description": "",
-  "main": "webpack.config.js",
+  "main": "build/app.js",
   "scripts": {
     "build": "npm run lint && npm run clean && tsc",
     "clean": "rimraf build",
     "lint": "tslint --project tsconfig.json",
-    "start": "npm run build && node build/index"
+    "start": "node build/app.js",
+    "start:dev": "npm run clean && tsc && npm start"
   },
   "keywords": [],
   "author": "",
